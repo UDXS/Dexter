@@ -1,12 +1,12 @@
 # UDXS Dexter
 ## API Reference
 
-**Note:** All of this is a work-in-progress. APIs are not finalized.
+### **Note:** All of this is a work-in-progress. APIs are not finalized.
 
 ## Watch APIs (Onboard)
 
-- ### User Interface & Rendering - [dexter.ui](ui.md)
-- ### Time - [dexter.time](time.md)
+- ### ~~User Interface & Rendering - [dexter.ui](ui.md)~~
+- ### ~~Time - [dexter.time](time.md)~~
 - ### ~~Now - [dexter.now](now.md)~~
 - ### ~~Communication - [dexter.host](host.md)~~
 - ### ~~Notifications - [dexter.notify](notify.md)~~

@@ -1,7 +1,7 @@
 # UDXS Dexter
 ## Developer Documentation
 
-
+---
 ## I am building Watchfaces and Watchapps for Dexter:
 ### [API Reference](api/index.md)
 ### [Watchface/Watchapp Examples](examples/index.md)
