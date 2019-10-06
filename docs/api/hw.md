@@ -18,9 +18,10 @@ Dexter enables you to access hardware data through a simple API.
         - [hasGyro]()
         - [hasVibration]()
         - [hasColor]()
+        - [hasTouch]()
     - [vibrate(ms)]()
     - [vibrate(pattern)]()
     - [stopVibrate()]()
-
+    - [onBackButton(single, callback)]()
 
 **Note:** This API is incomplete

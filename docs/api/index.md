@@ -6,11 +6,12 @@
 
 - ### ~~User Interface & Rendering - [dexter.ui](ui.md)~~
 - ### ~~Time - [dexter.time](time.md)~~
-- ### ~~Now - [dexter.now](now.md)~~
+- ### ~~Application Management - [dexter.app](app.md)~~
+- ### ~~Watchface Management - [dexter.face](face.md)~~
 - ### ~~Communication - [dexter.host](host.md)~~
+- ### ~~Hardware Access - [dexter.hw](hw.md)~~
 - ### ~~Notifications - [dexter.notify](notify.md)~~
 - ### ~~Preferences - [dexter.prefs](prefs.md)~~
-- ### ~~Hardware Access - [dexter.hw](hw.md)~~
 
 **Note:** crossed-out APIs  are not complete yet.
 ## Phone APIs (Companion)
