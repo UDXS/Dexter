@@ -1,5 +1,4 @@
-# UDXS Dexter
-## API Reference
+# API Reference
 
 ### **Note:** All of this is a work-in-progress. APIs are not finalized.
 

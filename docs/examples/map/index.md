@@ -1,4 +1,5 @@
-# Dexter Modern Map Example
+# Modern Map Watchface
+## Intermediate Example
 
 **Note:** This example and its associated documentation is incomplete and has not been tested.
 

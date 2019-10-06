@@ -1,5 +1,4 @@
-# UDXS Dexter
-## Developer Documentation
+# Developer Documentation
 
 ---
 ## I am building Watchfaces and Watchapps for Dexter:
