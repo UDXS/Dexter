@@ -4,4 +4,4 @@
 ## Watchfaces
 
 ### Intermediate
-- [Modern Map Watchface](examples/map/map.md)
+- [Modern Map Watchface](map/index.md)
