@@ -44,7 +44,7 @@ layout.add(mapVector) // We need to add the mapVector first so it's on the botto
 	shared system resources is available by
 	placing '@' before a path to a system resource.
 */
-let time = new dexter.ui.tlabel("@fonts/roboto", 48, dexter.ui.bold)
+let time = new dexter.ui.label("@fonts/roboto", 48, dexter.ui.bold)
 time.alignment = dexter.ui.center // Horizontally align the text to the center.
 time.color = new dexter.color(230, 230, 230) //  Set color to an off-white.
 
