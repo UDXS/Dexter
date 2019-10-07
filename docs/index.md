@@ -11,8 +11,8 @@
 ---
 ## I am developing Dexter and related infrastructure:
 
+### [Architecture](architecture/index.md)
 ### [GitHub Repository](https://github.com/Codeocracy/Dexter)
-### [Architecture Basics](basics.md)
 
 ---
 ## I am porting Dexter to my watch:

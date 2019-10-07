@@ -11,11 +11,14 @@ in the background.
 */
 
 
-let myFace = new dexter.ui.page(); // New fullscreen page for our watchfaces
-myFace.backgroundColor = [0, 4, 38]; //Set the background color for the whole page. Color is an array of Red, Green, and Blue, respectively.
+let myFace = new dexter.ui.page() // New fullscreen page for our watchfaces
+myFace.backgroundColor = [0, 4, 38] //Set the background color for the whole page. Color is an array of Red, Green, and Blue, respectively.
 
-let layout = new dexter.ui.absoluteLayout() // No fancy positioning/scrolling needed here, just absolute pixel positions.
-myFace.setLayout(layout)
+let layout = new dexter.ui.layout.absolute(240,240) // Makes an absolute layout the size of the screen.
+
+// The layout is the only thing that needs to be added to the page.
+myFace.add(layout) // No need to specify a layer, the default is 0.
+myFace.showScrollbar = false // Do not show a scrollbar even if the face is slightly bigger.
 
 /* 
 	The VectorCanvas is a way to draw a set of shapes and lines through a series of drawing commands.
@@ -45,7 +48,7 @@ layout.add(mapVector) // We need to add the mapVector first so it's on the botto
 */
 let time = new dexter.ui.label("@fonts/roboto", 48, "bold")
 time.alignment = "center" // Horizontally align the text to the center.
-time.color = [230, 230, 230] //  Set color to an off-white. Cp;pr
+time.color = [230, 230, 230] // Set color to an off-white.
 
 // Get the current time and put it on our time label
 let curTime = dexter.time.now()
@@ -66,7 +69,7 @@ layout.add(time)
 
 // Declare a connection indicator using an icon
 let connIndicator = new dexter.Ui.VectorIcon("@icons/noHostConnection") // Use a system icon that indicates no phone connected
-connIndicator.setAlignment("center") // Horizontally align icon to the center, important for centering icon.
+connIndicator.alignment = "center" // Horizontally align icon to the center, important for centering icon.
 // Position it close to the bottom center
 connIndicator.x = myFace.width / 2
 connIndicator.y = myFace.height - 30
@@ -91,7 +94,7 @@ dexter.time.handleChange(dexter.time.minutes, function (currentTime) {
 		.error(function () { // No connection to host.
 
 			// Show "No Connection" indicator icon
-			connIndicator.visible = true;
+			connIndicator.visible = true
 		})
 		.then(function () { // We have a connection to the phone. Make a request
 			return dexter.host.request("map", {}) // Just request current location map
@@ -100,7 +103,7 @@ dexter.time.handleChange(dexter.time.minutes, function (currentTime) {
 			connIndicator.visible = false // No connection error. Hide the indicator icon.
 			mapVector.clear() // Clear the vector map
 			mapVector.setLineColor(130, 130, 160) // Set path/road color to a darker bluish-gray.
-			mapVector.setCaps("square", "square"); //We want lines with square caps (non-rounded)
+			mapVector.setCaps("square", "square") //We want lines with square caps (non-rounded)
 
 			/* 
 				The map the phone sent us is an array of paths with each path line looking like: 
@@ -111,12 +114,12 @@ dexter.time.handleChange(dexter.time.minutes, function (currentTime) {
 				for visual effect.
 			*/
 			for (let path of map) { // Get each path line from the map array
-				mapVector.setLineWidth(path[4]); //Set the thickness to draw the line with
+				mapVector.setLineWidth(path[4]) //Set the thickness to draw the line with
 				mapVector.drawLine(path[0], path[1], path[2], path[3]) //Draw the line with the previously-set colors and paths
 			}
 		})
 		.error(function () { // We couldn't retrieve the map. Show the same "No Connection" indicator icon.
-			connIndicator.visible = true;
+			connIndicator.visible = true
 		})
 
 	myFace.draw() // Though Dexter is pretty smart, we need to help it figure out when to redraw the screen
