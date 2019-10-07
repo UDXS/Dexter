@@ -19,4 +19,4 @@ The watchface makes heavy use of `dexter.ui.vectorCanvas` and functions within `
 
 
 ## Source Code
-- [map.js](map.js) - Watchface code
+- [map.js](https://github.com/Codeocracy/Dexter/blob/master/docs/examples/map/map.js) - Watchface code

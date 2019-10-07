@@ -1,4 +1,4 @@
-## Dexter UI Architecture
+## UI Architecture
 
 **Note:** Information from this document will likely be adapted for an upcoming __UI Development Guide__.
 

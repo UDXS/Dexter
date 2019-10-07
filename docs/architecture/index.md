@@ -1,3 +1,3 @@
-# Dexter System Architecture
+# System Architecture
 
 ### [User Interface](ui.md)
