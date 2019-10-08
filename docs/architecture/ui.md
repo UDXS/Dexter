@@ -14,9 +14,9 @@ Currently, Dexter requires a touch screen and a physical "Home" button.
 
 ### Layout
 
-UIs in Dexter are made up of pages. An application can push/pop pages onto the page stack, opening and closing them. Pages are vertically scrolling and can have multiple, possibly independently, scrolling layers. One should take care to not use layers where a page is more acceptable. Most pages will not need more than 1 or 2 layers.
+UIs in Dexter are made up of pages. An application can push/pop pages onto the page stack, opening and closing them. Pages are vertically scrolling only but this can be helped with horizontal layouts.
 
-Within each layer is a set of elements, with each element taking its own line. In some cases, one may wish to place two items next to each other, or even to have horizontal scrolling. This can be accomplished via layout elements. Layout elements are special elements that render their subelements in a specific order. There are a few system layouts available but it is possible to create a custom layout as well.
+Each element normally takes up a single line.  In some cases, one may wish to place two items next to each other, or even to have horizontal scrolling. This can be accomplished via layout elements. Layout elements are special elements that render their subelements in a specific order. There are a few system layouts available but it is possible to create a custom layout as well. There is also a layout that enables overlaying elements in layers. More layouts are likely to be added in the future.
 
 Dexter uses a version of the box model similar to the one available in CSS with margins, borders, and padding. Margins/padding are 0 by default, however.
 
@@ -30,11 +30,13 @@ Dexter uses a version of the box model similar to the one available in CSS with 
 - image
 - button
 - slideButton
-- slideshow
 - vectorCanvas
 - canvas
 - layout
-    - absolute
+    - box
     - split
+    - absolute
+    - horizontal
+    - overlay
 
 ## [Refer to dexter.ui in the API Reference.](../api/ui.md)
