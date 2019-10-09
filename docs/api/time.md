@@ -70,7 +70,7 @@ Registers event handler that triggers when the specified unit of time changes.
 
 Example: `"Mdmh"` - triggers on month change, day change, hour change, or on minute change. These do not need to be in any order.
 
-Available specifiers are based on [this list](https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-date-and-time-format-strings).
+Available specifiers are based on a subset of [this list](https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-date-and-time-format-strings).
 
 **callback** - A function accepting the parameters `(specifier, time)` where `specifier` is a single-lettered string containing the largest time unit that changed and `time` is the current time as a JavaScript `Date` object.
 
